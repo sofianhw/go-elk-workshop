@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "cccd3c4e-7ea9-4e2d-b0ad-1ab19487fe85",
+		"name": "go-elk-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/payments/list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "countryISO2",
+						"value": "BG",
+						"type": "text"
+					},
+					{
+						"key": "userID",
+						"value": "42",
+						"type": "text"
+					},
+					{
+						"key": "paymentMethod",
+						"value": "VISA",
+						"type": "text"
+					},
+					{
+						"key": "userType",
+						"value": "business",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/payments/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payments",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/payments/execute",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "countryISO2",
+						"value": "BG",
+						"type": "text"
+					},
+					{
+						"key": "userID",
+						"value": "42",
+						"type": "text"
+					},
+					{
+						"key": "paymentMethod",
+						"value": "VISA",
+						"type": "text"
+					},
+					{
+						"key": "userType",
+						"value": "business",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/payments/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payments",
+						"execute"
+					]
+				},
+				"description": "http://localhost:8080/payments/execute"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/payments/authhold",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "countryISO2",
+						"value": "BG",
+						"type": "text"
+					},
+					{
+						"key": "userID",
+						"value": "42",
+						"type": "text"
+					},
+					{
+						"key": "paymentMethod",
+						"value": "VISA",
+						"type": "text"
+					},
+					{
+						"key": "userType",
+						"value": "business",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/payments/authhold",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payments",
+						"authhold"
+					]
+				},
+				"description": "http://localhost:8080/payments/authhold"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
